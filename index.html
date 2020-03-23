@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Capstone Management System</title>
+
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./javascript/algorithm.js"></script>
+    <script src="./javascript/function.js"></script>
+    <script src="./javascript/moment.js"></script>
+    <script src="./javascript/mustache.js"></script>
+    <script src="./javascript/munkres.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- NAVIGATION -->
+
+    <nav>
+        <div class="container">
+            <img class="brand" src="images/ksu_logo.png" id="logo" />
+            <ul class="menu">
+                <li class="menu-item"><a class="menu-link" href="/">Home</a></li>
+                <li class="menu-item"><a class="menu-link" href="/?preference">Preference</a></li>
+                <li class="menu-item"><a class="menu-link" href="/?assignment">Assignment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!-- HEADER -->
+
+    <header>
+        <div class="container">
+            <h1 class="title">Capstone Management System</h1>
+            <h2 class="title">Kennesaw State University: Department of Information Technology</h2>
+        </div>
+    </header>
+
+
+<!-- MAIN CONTENT -->
+
+    <main>
+        <div class="container">
+
+            <section id="preference" style="display:none">
+                <form id="preference-form">
+                    <div class="header">
+                        <h3>Project Preferences</h3>
+                        <p>Students:</p>
+                        <select id="preference-select">
+                            <option></option>
+                        </select>
+                    </div>
+                    <table>
+                        <tbody id="preference-table">
+                            <tr>
+                                <th width="100%">Project Name</th>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>N</th>
+                            </tr>
+                            <tr class ="preference-tr-result">
+                                    <td colspan="5">There is no table data to display.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="footer">
+                        <button id="preference-button-submit" type="button">Submit</button>
+                    </div>
+                </form>
+                <br>
+            </section>
+
+            <section id="assignment" style="display:none">
+                <form id="assignment-form">
+                    <h3>Project Assignment</h3>
+                    <table>
+                        <tbody id="assignment-table">
+                            <tr>
+                                <th width="5px">#</th>
+                                <th>Project</th>
+                                <th>Sponsor</th>
+                                <th>Instructor</th>
+                            	<th width="5px">Students</th>
+                                <th width="5px">Weight</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="footer">
+                        <p>Students:</p>
+                        <input id="assignment-input-min" type="text" placeholder="Min."/>
+                        <input id="assignment-input-max" type="text" placeholder="Max."/>
+                        <button id="assignment-button-minimize" type="button">Optimize (Min.)</button>
+                        <button id="assignment-button-maximize" type="button">Optimize (Max.)</button>
+                        <button id="assignment-button-assign" type="button">Assign</button>
+                        <button id="assignment-button-update" type="button">Update</button>
+                        <button id="assignment-button-reset" type="button">Reset</button>
+                    </div>
+                </form>
+                <br>
+            </section>
+
+        </div>
+    </main>
+
+
+<!-- FOOTER -->
+
+    <footer>
+        <div class="container">
+            <p class="footer">© Copyright 2019. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,15 @@
+{{#.}}
+    <tr class="assignment-tr-result">
+        <td>{{Project_ID}}</td>
+        <td>{{Title}}</td>
+        <td>{{Sponsor}}</td>
+        <td>{{Instructor}}</td>
+        <td id="assignment-td-{{Project_ID}}-students"></td>
+        <td id="assignment-td-{{Project_ID}}-weight"></td>
+    </tr>
+{{/.}}
+{{^.}}
+    <tr class="assignment-tr-result">
+        <td colspan="6">There is no table data to display.</td>
+    </tr>
+{{/.}}

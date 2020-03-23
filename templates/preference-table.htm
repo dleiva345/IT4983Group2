@@ -1,0 +1,14 @@
+{{#.}}
+    <tr class="preference-tr-result" data-application="{{Application_ID}}">
+        <td width="100%">{{Title}}</td>
+        <td><input type="radio" id="preference-td-radio-{{Project_No}}-1" name="{{Project_ID}}" value="1"></td>
+        <td><input type="radio" id="preference-td-radio-{{Project_No}}-2" name="{{Project_ID}}" value="2"></td>
+        <td><input type="radio" id="preference-td-radio-{{Project_No}}-3" name="{{Project_ID}}" value="3"></td>
+        <td><input type="radio" id="preference-td-radio-{{Project_No}}-9" name="{{Project_ID}}" value="9"></td>
+    </tr>
+{{/.}}
+{{^.}}
+    <tr class ="preference-tr-result">
+        <td colspan="5">There is no table data to display.</td>
+    </tr>
+{{/.}}
