@@ -36,11 +36,7 @@ CREATE TABLE `instructor` (
   `Phone` varchar(50) NOT NULL,
   `Office` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
---
--- Adding data to 'instructor' table
---
-INSERT INTO instructor (FirstName,LastName,Email,phone,Office)
-VALUES ("Billy","Joe","billyjoe@email.com","404345789","106");
+
 -- --------------------------------------------------------
 
 --
@@ -217,14 +213,7 @@ CREATE TABLE `student` (
   `Email` varchar(100) NOT NULL,
   `NetID` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
---
--- Adding data to "student" table
 
-INSERT INTO student (FirstName,LastName,Email,NetID)
-VALUES ("John","Smith","johnsmith@email.com","JM");
-
-INSERT INTO student (FirstName,LastName,Email,NetID)
-VALUES ("Jan","Doe","jandoe@email.com","JD");
 
 -- --------------------------------------------------------
 
